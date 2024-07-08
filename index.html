@@ -142,8 +142,120 @@
 					<li>suco</li>
 				</ul>
 			</ol>
+      <ol type="I">
+        <li>arroz</li>
+        <li>refri</li>
+        <li>carne</li>
+      </ol>
+
+      <ol type="A">
+        <li>linguica</li>
+        <li>farofa</li>
+        <li>picanha</li>
+      </ol>
+
+      <ol type="a">
+        <li>sushi</li>
+        <li>pao de alho</li>
+        <li>melao</li>
+      </ol>
+
+      <ol type="1" start="4">
+        <li>limao</li>
+        <li>pera</li>
+        <li>ameixa</li>
+      </ol>
+
 		</section>
 
+    <section>
+	  <!--
+		Tabel tem um (thead) que o cabecalho, (tbody) corpo e (tfooter) rodape
+		dentro do 
+		<thead>
+		 <tr>
+		 <th></th> ou <td></td> mas o correto th -> ele vai ficar sempre na parte de cima
+		 </tr> 
+		</thead>
+		lembrando que posso usar o colspan="2" para falar a quantidades de linhas ou colunas que eu quero usar
+		rowspan="2"
+	  -->
+      <h3>Tabela</h3>
+	  <table>
+	  	<thead>
+			<tr>
+				<th>Nome</th>
+				<th>codigo</th>
+				<th>funcao</th>
+				<th>loja</th>
+			</tr>
+	  	</thead>
+		<tbody>
+			<tr>
+				<td>Rodrigo Martins</td>
+				<td>465466</td>
+				<td>Programador</td>
+				<td>SoftHouse</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>footer</td>
+				<td>footer</td>
+				<td>footer</td>
+				<td>footer</td>
+			</tr>
+		</tfoot>
+	  </table>
+    </section>
+
+	<section>
+		<h2>Formulario</h2>
+		<form action="" method="#">
+			<label>Name:</label>
+			<input type="text" name="name" placeholder="digite seu name" required>
+			<label>Email:
+				<input type="email" name="email" value="rodrigo@gmail.com">
+			</label>
+			<label>Fone:
+				<input type="number" name="number">
+			</label>
+
+			<label for="sexo">Sexo</label>
+			<select>
+				<option value="sexo">homem</option>
+				<option value="sexo">mulher</option>
+				<option value="lesbica">lesbica</option>
+				<option value="boyceta">boyceta</option>
+			</select>
+
+		    <input type="ridius" name="" value="">
+
+			<button type="enviar">Salvar</button>
+
+			<label>Cidade:</label>
+			<label>Ictu-Ma 
+			   <input type="radio" name="city" value="icatu">
+			</label>
+			<label>Morros-Ma
+              <input type="radio" name="city" value="morros">
+			</label>
+            <label>Sao luis-Ma 
+			  <input type="radio" name="city" value="sao luis">
+			</label>
+			<input type="button" name="botao" value="enviar">
+
+		   </br>
+
+			<fieldset >
+                <legend>Contatos</legend>
+				<label for="">Fone:</label>
+				<input type="number" name="" value="">
+				<label for="">Email:</label>
+				<input type="email" name="" value="">
+			</fieldset>
+		</form>
+	</section>
 
 	</body>
 </html>
