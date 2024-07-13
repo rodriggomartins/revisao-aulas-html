@@ -1,0 +1,51 @@
+/*seletor universal, ele server para restar todas as configuracoes que vem no navegador
+  tira o margin, padding e
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  background: #ff8c00;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+.section-one {
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+
+  margin-top: 10px;
+  padding-top: 6px;
+}
+
+header {
+  color: green;
+}
+
+header>nav>ul>li {
+  color: red;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+[meu-atributo] {
+  color: yellow;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid red;
+}
+
+[meu-atributo]:hover {
+  color: red;
+  cursor: pointer;
+  transition: 3s;
+  border-bottom: 1px solid black;
+}

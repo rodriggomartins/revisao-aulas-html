@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Curso de html</title>
-	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -25,7 +25,9 @@
 	<footer>
 	</footer>
 
-	<section>
+	<h3 meu-atributo>Html permite eu criar meus atributos com qualquer name</h3>
+
+	<section class="section-one">
 		<p>Temos tags em line e em bloco</p>
 		<p>header, nav, ul, ol, main, footer,div, aside, code -> tag que abri e fecha e em bloco</p>
 	</section>
@@ -69,6 +71,7 @@
 	<section>
 		<h2>Tenho tag para escrecer codigo de programacao</h2>
 		<p>Para usar essa tag, eu tenho que abrir uma tag code e fechar ela</p>
+		<p>Code pre e para deixar preformatado</p>
 		<code>
 			<pre>
 				public class Javinha{
@@ -241,8 +244,12 @@
 			</label>
 
 			<label for="sexo">Sexo</label>
-			<select>
-				<option value="sexo">homem</option>
+			<!--
+				tem o select e os option tem que ter um name, para poder mandar para o backend
+				dentro do select, eu posso colocar uma tag para agrupar <optgroup><option></option></optgroup>
+			-->
+			<select for="select" name="selection">
+				<option value="sexo" name="sexo">homem</option>
 				<option value="sexo">mulher</option>
 				<option value="lesbica">lesbica</option>
 				<option value="boyceta">boyceta</option>
@@ -266,19 +273,26 @@
 			</label>
 			<input type="button" name="botao" value="enviar">
 
-			</br>
+			<input type="color">
+			<iput type="file" accept="">
+				</br>
 
-			<fieldset>
-				<legend>Contatos</legend>
-				<label for="">Fone:</label>
-				<input type="number" name="" value="">
-				<label for="">Email:</label>
-				<input type="email" name="" value="">
-				<label>Casado</label>
-				<!-- aqui posso colocar o checkd e ele ja marca -->
-				<input type="checkbox">
-				<input type="date" value="2024-07-12">
-			</fieldset>
+				<fieldset>
+					<legend>Contatos</legend>
+					<label for="">Fone:</label>
+					<input type="number" name="" value="">
+					<label for="">Email:</label>
+					<input type="email" name="" value="">
+					<input type="password">
+					<label>Casado</label>
+					<!-- aqui posso colocar o checkd e ele ja marca -->
+					<input type="checkbox">
+					<input type="date" value="2024-07-12">
+					<input type="time" id="time" name="time" value="20:00">
+					<input type="range">
+					<input type="url">
+					<textarea></textarea>
+				</fieldset>
 		</form>
 	</section>
 
